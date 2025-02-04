@@ -46,7 +46,6 @@ router.post("/login", async (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
-  console.log(BK - login);
   let user;
   try {
     user = await get(email);

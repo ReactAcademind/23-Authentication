@@ -14,7 +14,6 @@ app.use((req, res, next) => {
   next();
 });
 
-console.log("before authRoutes");
 app.use(authRoutes);
 
 app.use("/events", eventRoutes);
